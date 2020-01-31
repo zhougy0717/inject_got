@@ -181,7 +181,6 @@ static int get_exe_name(char *buf, int size)
     return 0;
 }
 
-
 typedef int (*FuncPuts)(const char *);
 static FuncPuts old_puts = NULL;
 
