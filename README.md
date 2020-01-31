@@ -42,11 +42,11 @@ linking view时，可以没有Program Header Table，但必须要有Section Head
 >我理解之所以要这么分成不同的view的原因是，运行时，内存比较宝贵，ELF文件被加载时，相关的节(section)被合并成segment。
 
 segment列表[2]
-![3b25828c42fd0bec473b2eded7e98d9b]("resources/屏幕快照 2020-01-06 下午9.10.43.png")
+![3b25828c42fd0bec473b2eded7e98d9b]("resources/屏幕快照\ 2020-01-06\ 下午9.10.43.png")
 程序运行时，就体现为这些段。而对于本文比较重要的段就是DYNAMIC段，其中包含了一组_DYNAMIC array。后文再做介绍。
 
 section列表节选[2]
-![4531bf460ddcca48ecd458d30faa9021](resources/屏幕快照 2020-01-07 上午7.05.53.png)
+![4531bf460ddcca48ecd458d30faa9021]("resources/屏幕快照\ 2020-01-07\ 上午7.05.53.png")
 section就是我们常见的以点开头的一些标记。链接脚本（linker script, .lds文件），也正是定义的这些ELF文件中的节。常见的节有: .bss, .data, .text, .init等等。
 
 ## 动态链接
